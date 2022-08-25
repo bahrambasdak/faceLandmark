@@ -1,7 +1,7 @@
 export const drowMesh = (predictions, ctx) => {
-  //console.log(predictions[0].keypoints );
+
   if (predictions.length > 0) {
-    //predictions.forEach(prediction => {
+
     const keypoints = predictions[0].keypoints;
     const box = predictions[0].box;
 
@@ -23,6 +23,6 @@ export const drowMesh = (predictions, ctx) => {
     //   ctx.stroke();
 
     }
-    // });
+
   }
 };
