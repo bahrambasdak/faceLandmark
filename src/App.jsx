@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs";
+
 
 import * as faceLandmarksDetection from "@tensorflow-models/face-landmarks-detection";
 import { useRef } from "react";
@@ -36,7 +36,7 @@ const App = () => {
       canvasRef.current.width = videoWidth;
       canvasRef.current.heigth = videoHeigth;
       const face = await net.estimateFaces(video);
-      console.log(face);
+      //console.log(face);
 
       const ctx = canvasRef.current.getContext('2d');
       drowMesh(face,ctx);

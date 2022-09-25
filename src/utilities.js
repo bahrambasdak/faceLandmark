@@ -15,13 +15,6 @@ export const drowMesh = (predictions, ctx) => {
       ctx.arc(x, y, 1, 0, 3 * Math.PI);
       ctx.fillStyle = "#2ecc71";
       ctx.fill();
-
-    //   ctx.beginPath();
-    //   ctx.moveTo(xOld, yOld);
-    //   ctx.lineTo(x, y);
-    //   ctx.fillStyle = "#2ecc71";
-    //   ctx.stroke();
-
     }
 
   }
