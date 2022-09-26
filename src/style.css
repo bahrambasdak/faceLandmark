@@ -1,43 +1,53 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
-#root{
-    height: 100vh;
-    width: 100wh;
-    display: flex;
-    justify-content: center;
-
+#root {
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  justify-content: center;
 }
-.app{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 100vh;
-    width: 100wh;
-    
-
+.app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100wh;
 }
 
 .webcam {
+  position: absolute;
+  width: 640px;
+  height: 480px;
+  visibility: hidden;
+}
 
-    position: absolute;
-    width: 640px;
-    height: 480px;
-    
+.canvas {
+  position: absolute;
+  width: 640px;
+  height: 480px;
+  border: 10px solid rgb(4, 94, 89);
 }
-.webcam {
-    visibility:hidden;
-    
+
+@media only screen and (max-width: 768px) {
+  /*for tablet////*/
+
+  .webcam {
+    width: 95vw;
+    height: 95vh;
+  }
+
+  .canvas {
+    width: 95vw;
+    height: 95vh;
+  }
 }
-.canvas{
-    position: absolute;
-    width: 640px;
-    height: 480px;
-    border: 10px solid rgb(4, 94, 89);
-  
+
+@media only screen and (max-width: 600px) {
+  /*for mobile////*/
 }
